@@ -1,4 +1,4 @@
-# Documento de Visión – Guayaba Clara
+# Documento de Visión – Cafe Clara
 
 ## 1. Propósito del documento
 Definir la visión del producto, el problema que resuelve y los objetivos de negocio del sistema **Guayaba Clara**.
