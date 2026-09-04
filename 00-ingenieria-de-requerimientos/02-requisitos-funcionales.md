@@ -1,4 +1,4 @@
-# Requisitos Funcionales – Guayaba Clara
+# Requisitos Funcionales – Cafe Claro
 
 ## RF-01: Catálogo de productos
 El sistema debe mostrar un catálogo de productos de café con nombre, descripción, precio, imagen y disponibilidad de stock.
