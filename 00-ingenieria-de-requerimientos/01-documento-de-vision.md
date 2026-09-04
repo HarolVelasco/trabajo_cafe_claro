@@ -1,7 +1,7 @@
 # Documento de Visión – Cafe Clara
 
 ## 1. Propósito del documento
-Definir la visión del producto, el problema que resuelve y los objetivos de negocio del sistema **Guayaba Clara**.
+Definir la visión del producto, el problema que resuelve y los objetivos de negocio del sistema **Cafe Claro**.
 
 ## 2. Problema
 Los pequeños y medianos productores / comercializadores de café colombiano necesitan:
@@ -11,7 +11,7 @@ Los pequeños y medianos productores / comercializadores de café colombiano nec
 - Trazabilidad de pedidos y clientes.
 
 ## 3. Visión del producto
-**Guayaba Clara** es una plataforma web sencilla, moderna y funcional que permite a un negocio de café:
+**Cafe Claro** es una plataforma web sencilla, moderna y funcional que permite a un negocio de café:
 - Mostrar su catálogo de productos de forma atractiva.
 - Recibir pedidos en línea con validación de stock.
 - Gestionar clientes, pedidos e inventario desde un panel administrativo.
