@@ -1,4 +1,4 @@
-# Requisitos No Funcionales – Guayaba Clara
+# Requisitos No Funcionales – Cafe Claro
 
 ## RNF-01: Usabilidad
 La interfaz debe ser clara, moderna y usable tanto en escritorio como en dispositivos móviles (diseño responsive).
