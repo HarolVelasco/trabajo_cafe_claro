@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Café Claro, café colombiano seleccionado y atención al cliente 24/7.">
+  <title>Café Claro | Aroma que se nota</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Café Claro, inicio"><span class="brand-mark">✳</span><span>café <b>claro</b></span></a>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a href="#productos">Cafés</a><a href="#historia">Nuestro origen</a><a href="login.html">Iniciar sesión</a><a href="register.html">Registrarse</a><a href="admin.html">Panel admin</a>
+    </nav>
+    <div class="header-actions"><select class="language-select" id="language-select" aria-label="Seleccionar idioma"><option value="es">ES</option><option value="en">EN</option></select><button class="account-button" id="account-button">Iniciar sesión</button><button class="cart-button"
+         data-open-cart aria-label="Abrir carrito">Carrito 
+         <span class="cart-count">0</span></button><button class="header-chat" 
+         data-open-chat><span class="online-dot"></span> Atención 24/7 
+         <span class="arrow">↗</span></button></div>
+  </header>
+
+  <main>
+    <section class="business-access" id="cuenta">
+      <div class="account-card" id="account-guest"><p class="eyebrow"><span class="line"></span> Cuenta empresarial</p><h2>Compra y gestiona<br><em>con trazabilidad.</em></h2><p>Regístrate para confirmar pedidos, consultar tu historial y recibir promociones por WhatsApp.</p><form id="auth-form"><input id="auth-name" placeholder="Nombre completo" autocomplete="name"><input id="auth-email" type="email" placeholder="Correo electrónico" required autocomplete="email"><input id="auth-phone" type="tel" placeholder="WhatsApp (+573001234567)" autocomplete="tel"><input id="auth-password" type="password" placeholder="Contraseña (8 caracteres)" minlength="8" required autocomplete="current-password"><div><button class="button primary" type="submit" id="auth-submit">Iniciar sesión</button><button class="text-button" type="button" id="auth-toggle">Crear cuenta</button></div><p class="form-status" id="auth-status" role="status"></p></form></div>
+      <div class="account-card account-active" id="account-active" hidden><p class="eyebrow"><span class="line"></span> Sesión activa</p><h2 id="account-name">Hola</h2><p id="account-role"></p><div><button class="button primary" id="orders-button">Mis pedidos</button><button class="text-button" id="logout-button">Cerrar sesión</button></div><div class="order-list" id="order-list"></div></div>
+    </section>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="line">
+
+        </span> Directo de la finca · Colombia</p>
+        <h1>El café<br><em>en su punto.</em></h1>
+        <p class="hero-text">Café colombiano seleccionado, tostado con paciencia y 
+            enviado con cuidado. Aroma honesto para hogares, tiendas y cafeterías que
+             saben elegir.</p>
+        <div class="hero-actions"><a class="button primary" href="#productos">Ver productos 
+            <span>↘</span></a><button class="text-button" data-open-chat>Hablar con Clara
+                 <span>→</span></button></div>
+        <div class="trust-row"><div class="avatars"><span>LM</span><span>CR</span>
+            <span>JG</span></div><div><strong>4.9 / 5</strong><small>+280 clientes felices
+
+            </small></div></div>
+      </div>
+    </section>
+
+    <section class="metrics-strip"><div><strong>12 ha</strong><span>de cultivo regenerativo
+
+    </span></div><div><strong>24 h</strong><span>para recibir tu pedido</span>
+    </div><div><strong>100%</strong><span>trazabilidad del origen</span></div>
+    </section>
+
+    <section class="products-section" id="productos">
+      <div class="section-heading"><div><p class="eyebrow"><span class="line">
+
+      </span> Elige tu café</p><h2>Aroma para<br><em>cada momento.</em></h2></div>
+      <p class="section-intro">Nuestros cafés llegan en diferentes perfiles de tueste para 
+        que prepares una taza memorable en casa o en tu negocio.</p></div>
+      <div class="product-grid">
+        <article class="product-card featured"><div class="product-visual coffee-bag">
+            <div class="coffee-beans"></div></div><div class="product-info"><span
+                 class="tag">Más pedido</span><h3>Origen Quindío</h3><p>Notas de caramelo 
+                    y chocolate. Suave, dulce y equilibrado.</p><div class="product-bottom">
+                        <strong>$32.900 <small>/ 500 g</small></strong><button 
+                        class="icon-button add-product" aria-label="Agregar café Origen
+                         Quindío" data-product="Café Origen Quindío">+</button></div></div>
+                        </article>
+        <article class="product-card"><div class="product-visual coffee-bag coffee-light">
+            <div class="coffee-beans"></div></div><div class="product-info">
+                <span class="tag green-tag">Tueste claro</span><h3>Reserva Huila</h3>
+                <p>Aromas florales y notas cítricas para métodos filtrados.</p>
+                <div class="product-bottom"><strong>$36.500 <small>/ 500 g</small>
+                </strong><button class="icon-button add-product" aria-label="Agregar café 
+                Reserva Huila" data-product="Café Reserva Huila">+</button></div></div>
+            </article>
+        <article class="product-card"><div class="product-visual box-art"><span>CAFÉ<br><b>CLARO</b></span></div><div class="product-info"><span class="tag yellow-tag">Para regalar</span><h3>Kit de barista</h3><p>Café de origen, prensa francesa y cuchara medidora.</p><div class="product-bottom"><strong>$74.900 <small>/ kit</small></strong><button class="icon-button add-product" aria-label="Agregar kit de barista" data-product="Kit de barista">+</button></div></div></article>
+      </div>
+    </section>
+
+    <section class="admin-section" id="administracion" hidden><div class="section-heading"><div><p class="eyebrow"><span class="line"></span> Administración</p><h2>Control del<br><em>negocio.</em></h2></div><p class="section-intro">Consulta indicadores, inventario y pedidos desde un único lugar.</p></div><div class="admin-stats" id="admin-stats"></div><div class="admin-layout"><form class="admin-form" id="product-form"><h3 id="product-form-title">Nuevo producto</h3><input type="hidden" id="product-id"><input id="product-name" placeholder="Nombre" required><textarea id="product-description" placeholder="Descripción" required></textarea><input id="product-category" type="number" min="1" placeholder="ID categoría" required><input id="product-price" type="number" min="0" step="0.01" placeholder="Precio" required><input id="product-stock" type="number" min="0" placeholder="Existencias" required><input id="product-minimum" type="number" min="0" value="5" placeholder="Stock mínimo" required><button class="button primary" type="submit">Guardar producto</button></form><div class="admin-table-wrap"><h3>Productos e inventario</h3><div id="admin-products"></div></div></div></section>
+
+    <section class="story-section" id="historia"><div class="story-image">
+        <div class="story-label">Finca La Esperanza<br><b>Quimbaya, Quindío</b></div>
+        <div class="hill hill-back"></div><div class="hill hill-front"></div>
+        <div class="story-tree">✳</div></div><div class="story-copy"><p class="eyebrow">
+            <span class="line"></span> Nuestro origen</p><h2>Tostamos<br>
+                <em>lo que importa.</em></h2><p>En Café Claro creemos que una buena taza
+                     empieza mucho antes de llegar a tu mesa. Cuidamos el suelo, respetamos 
+                     los tiempos de la naturaleza y trabajamos con caficultores que conocen 
+                     cada parcela.</p><a href="#contacto" class="text-button">Conoce nuestro
+                         origen <span>→</span>
+                        </a>
+                    </div>
+                </section>
+
+    <section class="report-section" id="reportes"><div class="report-top">
+        <div><p class="eyebrow"><span class="line"></span> Centro de atención</p>
+            <h2>Lo que tus clientes<br><em>nos están diciendo.</em></h2></div
+            ><div class="report-controls"><label for="month">Periodo</label>
+                <select id="month"><option>Agosto 2026</option><option>Julio 2026</option>
+                    <option>Junio 2026</option></select>
+                    <button class="download-button" id="download-report" title="Descargar 
+                    reporte">↓ <span>Descargar</span></button></div></div>
+                    <div class="metrics-editor"><strong>Editar métricas</strong><label>Personas atendidas<input id="people-input" type="number" min="0" value="0"></label><label>Suma de calificaciones<input id="rating-sum-input" type="number" min="0" value="0"></label><label>Calificaciones recibidas<input id="rating-count-input" type="number" min="0" value="0"></label><button class="outline-button" id="save-metrics">Guardar cambios</button><span id="metrics-status" role="status"></span></div><div class="feedback-editor"><div><strong>Opiniones de clientes</strong><p>Agrega una calificación y su recomendación en conjunto. Puedes editar o eliminar cada registro.</p></div><form id="feedback-form"><input type="hidden" id="feedback-id"><label>Calificación<select id="feedback-rating" required><option value="5">5 estrellas</option><option value="4">4 estrellas</option><option value="3">3 estrellas</option><option value="2">2 estrellas</option><option value="1">1 estrella</option></select></label><label>Recomendación<textarea id="feedback-recommendation" required maxlength="1000" placeholder="Escribe la recomendación del cliente"></textarea></label><button class="outline-button" type="submit" id="feedback-submit">Agregar opinión</button><button class="clear-cart" type="button" id="feedback-cancel" hidden>Cancelar edición</button><span id="feedback-status" role="status"></span></form><div class="feedback-list" id="feedback-list"></div></div><div class="report-grid"><div class="big-stat">
+                        <span class="stat-label">Personas atendidas</span>
+                        <strong id="people-served">0</strong>
+                        <span class="trend" id="people-trend">↑ 0% <small>vs. mes anterior</small></span>
+                        <div class="bar-chart" aria-label="Gráfico de atención de los 
+                        últimos siete días"><i style="height:38%"></i><i style="height:52%">
+
+                        </i><i style="height:45%"></i><i style="height:68%"></i>
+                        <i style="height:58%"></i><i style="height:82%"></i>
+                        <i style="height:100%"></i></div><div class="chart-days">
+                            <span>Lun</span><span>Mar</span><span>Mié</span>
+                            <span>Jue</span><span>Vie</span><span>Sáb</span>
+                            <span>Dom</span></div></div><div class="rating-stat">
+                                <span class="stat-label">Calificación promedio</span>
+                                <strong id="average-rating">0.0 
+                                    <span>/ 5</span>
+                                </strong>
+                                <div class="stars" id="rating-stars">☆☆☆☆☆</div>
+                                <p id="rating-description">Aún no hay calificaciones registradas.</p>
+                                <div class="rating-line"><span>5 estrellas</span><b><i id="five-star-bar" style="width:0%"></i></b><em id="five-star-percent">0%</em></div>
+                                <div class="rating-line"><span>4 estrellas</span><b><i id="four-star-bar" style="width:0%"></i></b><em id="four-star-percent">0%</em></div>
+                                <div class="rating-line"><span>3 estrellas</span><b><i id="three-star-bar" style="width:0%"></i></b><em id="three-star-percent">0%</em></div>
+                                <div class="rating-line"><span>2 estrellas</span><b><i id="two-star-bar" style="width:0%"></i></b><em id="two-star-percent">0%</em></div>
+                                <div class="rating-line"><span>1 estrella</span><b><i id="one-star-bar" style="width:0%"></i></b><em id="one-star-percent">0%</em></div></div><div class="recommendation"><div class="recommendation-header"><span class="spark">✦</span><span class="stat-label">Sugerencia para administración</span></div><h3>Ampliar entregas<br>los días sábado</h3><p>El 34% de las recomendaciones menciona disponibilidad de fin de semana. Habilitar una ruta adicional podría recuperar hasta <b>120 pedidos</b> al mes.</p><button class="outline-button" id="view-recommendation">Ver detalle <span>→</span></button></div></div></section>
+
+    <section class="contact-section" id="contacto"><div><p class="eyebrow"><span class="line"></span> ¿Hablamos?</p><h2>Tu próxima taza<br><em>empieza aquí.</em></h2></div><div class="contact-form"><p>Déjanos tus datos y te ayudamos a encontrar el café perfecto.</p><form id="contact-form"><div class="form-row"><label>Nombre<input name="name" required placeholder="Tu nombre"></label><label>Correo<input name="email" type="email" required placeholder="tu@correo.com"></label></div><label>¿Qué necesitas?<select name="need"><option>Quiero hacer un pedido</option><option>Información de productos</option><option>Hablar sobre distribución</option></select></label><label class="check-label"><input type="checkbox" required> Acepto el tratamiento de mis datos según la <button type="button" id="privacy-link">política de privacidad</button>.</label><button class="button primary form-submit" type="submit">Enviar solicitud <span>↗</span></button><p class="form-status" id="form-status" role="status"></p></form></div></section>
+  </main>
+
+  <footer><a class="brand" href="#inicio"><span class="brand-mark">✳</span><span>café <b>claro</b></span></a><p>Café con origen, atención con propósito.</p><span>© 2026 Café Claro</span></footer>
+
+  <aside class="cart-panel" id="cart-panel" aria-label="Carrito de compra" aria-hidden="true"><div class="cart-panel-header"><div><p class="eyebrow">Tu selección</p><h2>Mi carrito</h2></div><button id="close-cart" aria-label="Cerrar carrito">×</button></div><div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty"><span>＋</span><p>Tu carrito está esperando<br>algo rico.</p><a href="#productos" id="browse-products">Ver productos</a></div><div class="cart-summary" id="cart-summary"><div><span>Total a pagar</span><strong id="cart-total">$0</strong></div><small>Envío calculado al confirmar el pedido</small><button class="button primary checkout-button" id="checkout">Continuar pedido <span>↗</span></button><button class="clear-cart" id="clear-cart">Vaciar carrito</button></div></aside>
+  <aside class="chat-panel" id="chat-panel" aria-label="Asistente Clara" aria-hidden="true"><div class="chat-header"><div class="assistant-avatar">✦</div><div><strong>Clara</strong><span><i></i> En línea · responde al instante</span></div><button id="close-chat" aria-label="Cerrar chat">×</button></div><div class="chat-messages" id="chat-messages"><div class="message bot">Hola, soy Clara. Puedo ayudarte con pedidos, envíos y nuestros productos. ¿Qué necesitas hoy?</div><div class="quick-replies"><button>Quiero hacer un pedido</button><button>¿Cuánto tarda el envío?</button><button>Ver productos</button></div></div><form class="chat-input" id="chat-form"><input id="chat-text" placeholder="Escribe un mensaje..." autocomplete="off"><button aria-label="Enviar mensaje">↗</button></form><div class="chat-consent">Al continuar, aceptas nuestra <button type="button" id="chat-privacy">política de privacidad</button>.</div></aside>
+  <div class="toast" id="toast" role="status"></div>
+  <div class="modal-backdrop" id="privacy-modal" aria-hidden="true"><div class="privacy-modal"><button class="modal-close" id="close-modal" aria-label="Cerrar">×</button><p class="eyebrow">Transparencia primero</p><h2>Tus datos, bajo tu control.</h2><p>Recopilamos únicamente lo necesario para atenderte: datos <b>públicos</b> de contacto, datos <b>semiprivados</b> para gestionar pedidos y datos <b>privados</b> solo cuando son necesarios para la entrega. No solicitamos datos sensibles para operar este servicio.</p><div class="privacy-list"><span>✓ Uso limitado a atención y pedidos</span><span>✓ Consulta, actualización o eliminación</span><span>✓ Nunca vendemos tu información</span></div><button class="button primary" id="accept-privacy">Entendido <span>→</span></button></div></div>
+  <script src="script.js"></script>
+</body>
+</html>

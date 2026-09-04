@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registrarse | Café Claro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="portal-page">
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <span class="brand-mark">✳</span>
+            <span>café <b>claro</b></span>
+        </a>
+        <nav class="portal-nav">
+            <a href="index.html">Página principal</a>
+            <a href="login.html">Iniciar sesión</a>
+        </nav>
+    </header>
+    <main class="portal-main">
+        <section class="portal-card">
+            <p class="eyebrow">
+                <span class="line"></span> Nueva cuenta
+            </p>
+            <h1>Regístrate<br><em>como cliente.</em></h1>
+            <p>Crea tu cuenta para guardar pedidos y consultar tu historial.</p>
+            <form id="register-form" class="portal-form">
+                <label>
+                    Nombre completo
+                    <input id="name" required autocomplete="name">
+                </label>
+                <label>
+                    Correo electrónico
+                    <input id="email" type="email" required autocomplete="email">
+                </label>
+                <label>
+                    WhatsApp
+                    <input id="phone" type="tel" required autocomplete="tel" placeholder="+573001234567">
+                    <small>Incluye el indicativo de país para recibir promociones.</small>
+                </label>
+                <label>
+                    Contraseña
+                    <input id="password" type="password" minlength="8" required autocomplete="new-password">
+                    <small>Mínimo 8 caracteres.</small>
+                </label>
+                <button class="button primary" type="submit">Crear cuenta <span>↗</span></button>
+                <p class="form-status" id("status" role("status"></p>
+            </form>
+            <p class="portal-link">
+                ¿Ya tienes una cuenta?
+                <a href("login.html">Inicia sesión</a>
+            </p>
+        </section>
+    </main>
+    <script src("portal.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Iniciar sesión | Café Claro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="portal-page">
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <span class="brand-mark">✳</span>
+            <span>café <b>claro</b></span>
+        </a>
+        <nav class="portal-nav">
+            <a href="index.html">Página principal</a>
+            <a href="register.html">Registrarse</a>
+        </nav>
+    </header>
+    <main class="portal-main">
+        <section class="portal-card">
+            <p class="eyebrow">
+                <span class="line"></span> Cuenta Café Claro
+            </p>
+            <h1>Inicia sesión<br><em>y continúa.</em></h1>
+            <p>Accede a tus pedidos y a las herramientas disponibles para tu rol.</p>
+            <form id="login-form" class="portal-form">
+                <label>
+                    Correo electrónico
+                    <input id="email" type="email" required autocomplete="email">
+                </label>
+                <label>
+                    Contraseña
+                    <input id="password" type="password" required autocomplete="current-password">
+                </label>
+                <button class="button primary" type="submit">Iniciar sesión <span>↗</span></button>
+                <p class="form-status" id="status" role="status"></p>
+            </form>
+            <p class="portal-link">
+                ¿Aún no tienes cuenta? 
+                <a href="register.html">Regístrate como cliente</a>
+            </p>
+        </section>
+    </main>
+    <script src="portal.js"></script>
+</body>
+</html>
